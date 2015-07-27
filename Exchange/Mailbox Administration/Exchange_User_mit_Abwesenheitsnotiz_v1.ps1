@@ -1,0 +1,1 @@
+Get-Mailbox | Get-MailboxAutoReplyConfiguration | Where-Object { $_.AutoReplyState -eq "Enabled" -or $_.AutoReplyState -eq "scheduled" } | fl identity
